@@ -23,7 +23,7 @@ In your terminal/command line app navigate to the folder where index.html is loc
 
 _Note: SimpleHTTPServer will default to serving the index.html file at the root url_
 
-_Note: If you are using python 3 then I think you will need to run_ `python3 -m http.server 8000` _instead._
+_Note: If you are using python 3 then I think you will need to run_ `python -m http.server 8000` _instead._
 
 _Note: You might be able to just open the index.html page in a browser, but most browsers have security features that disable a bunch of things we might need when loading files locally. The python server will help us get around these security restrictions._
 
