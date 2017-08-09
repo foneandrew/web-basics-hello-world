@@ -42,7 +42,7 @@ Here are the things to fix up on the page:
 * Make the heading say something useful by editing the h1 tag in index.html _(maybe something like 'hello world' yeah?)_
 * Make the purple text purple by filling in the definition for the 'purple' css class in index.css _(If you want to learn more [here is a good guide for getting started with css](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS). I recommend looking at the [tutorial for css selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Selectors) as it comes in handy for interacting with the page via javascript)_
 * Make the button print some text into the results-area div by binding a javascript function to the click action on the button element _(hint: start with line 11 in index.js.)_
-* Do something interesting with the fetchRandomWord function (which uses the http://www.setgetgo.com/randomword/ API) _(Maybe you can put the word it gets on the screen when the button is clicked?)_
+* Do something interesting with the fetchRandomChuckNorrisJoke function (which uses the https://api.chucknorris.io/ API -- sorry if the jokes are terrible!!!) _(Maybe you can put the joke it gets on the screen when the button is clicked?)_
 
 Once you've done all this you can carry on and play with things as much as you like. Add a paragraph to the page describing your idea for the ultimate burger, or add some stock images of scientists doing science things. Or maybe you can make the page less ugly with some css styling or do something fancy with javascript like displaying the current system time? You can also use javascript to explore some data from some other APIs that are out there.
 
