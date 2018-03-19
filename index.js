@@ -13,23 +13,40 @@ $(function() {
    * TODO: You will need to use a css selector to get jQuery to find the button element in the page
    * Then you will need to make a new javascript function to do stuff for when the button
    * is clicked and pass it into the click function above...
+   * The function should call one of the functions below, and pass the other in as the callback...
    */
 });
 
-// Gets a random chuck norris joke from an API, then passes it to the callback function
-function fetchRandomChuckNorrisJoke(callback) {
-  // this api picks a random chuck norris joke and returns it as plain text
-  // limited to the dev category
-  // WARNING: I do not control the content of the jokes! Some might be a bit rude!
-  var promise = $.get("https://api.chucknorris.io/jokes/random?category=dev");
+function displayQuestionAndAnswer(question, answer) {
+  $("#results-area").text("True or false?");
+  $("#question-display").text(question);
+  $("#answer-display").text("Answer: " + answer);
+}
+
+// Gets a random animal trivia question from an API, then pass the result to the callback function
+function fetchRandomTriviaQuestion(callback) {
+  // This API gets random trvia questions
+  // The url includes parameters to configure the API to only return
+  // true or false trivia on animals encoded in base64
+
+  // Configure your own api call at https://opentdb.com/api_config.php
+  var promise = $.get("https://opentdb.com/api.php?amount=1&category=27&type=boolean&encode=base64");
 
   // $.get is asynchronous, so we need to define a
   // handler for when the request is complete
   promise.done(function(data) {
-    // The data returned is a json object
+    // Check the console when you have the API call working in order
+    // to inspect the json object that we recieve
     console.log(data);
 
-    // if you want to do something with the word do it here
-    callback(data.value);
+    // extract and decode the results
+    var results = data.results;
+
+    // atob() is a built in method to decode base64 encoded strings
+    var question = atob(results[0].question);
+    var answer = atob(results[0].correct_answer);
+
+    // call the function we passed into fetchRandomTriviaQuestion
+    callback(question, answer);
   })
 }
