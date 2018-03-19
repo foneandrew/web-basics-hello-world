@@ -8,18 +8,19 @@ $(function() {
   // console.log will log a message or object to the browser developer console
   console.log("page loaded...");
 
-  $("selector-goes-here").click(/* function for when the button is clicked goes here */);
-  /*
-   * TODO: You will need to use a css selector to get jQuery to find the button element in the page
-   * Then you will need to make a new javascript function to do stuff for when the button
-   * is clicked and pass it into the click function above...
-   * The function should call one of the functions below, and pass the other in as the callback...
-   */
+  $("button").click(showAnimalTrivia);
 });
+
+function showAnimalTrivia() {
+  // the display area will show "loading" until it is changed by displayQuestionAndAnswer
+  // once the API call has finished
+  $("#results-area").text("Loading...");
+  fetchRandomTriviaQuestion(displayQuestionAndAnswer);
+}
 
 function displayQuestionAndAnswer(question, answer) {
   $("#results-area").text("True or false?");
-  $("#question-display").text(question);
+  $("#question-display").text("Question: " + question);
   $("#answer-display").text("Answer: " + answer);
 }
 
