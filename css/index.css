@@ -42,7 +42,7 @@ h1{
   text-align: center;
   }
   
-  #test > path {
+  #test > path:hover {
   fill: pink;
   stroke: #ff0000;
   stroke-width: 1;
