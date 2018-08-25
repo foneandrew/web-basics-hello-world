@@ -1,0 +1,49 @@
+.purple {
+  /* TODO: Add some style definitions for the purple class in here... */
+}
+
+/* #answer-display will have black text on a white background.
+   Hovering the mouse over it will reveal the text */
+#answer-display {
+  background-color: #000;
+}
+
+#answer-display:hover {
+  color: #fff;
+}
+
+.header{
+  text-align: center;
+}
+
+.content{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#sheep{
+  width: 100px;
+  background-image: url('sheep.png');
+  background-repeat: repeat-x;
+  height: 100px;
+  /* float: right; */
+}
+
+#person{
+  /* float: left; */
+}
+
+.map{
+  padding-left:50%;
+  padding-right: 50%;
+  text-align: center;
+  }
+  
+  #test > path:hover {
+  fill: pink;
+  stroke: #ff0000;
+  stroke-width: 1;
+  }
