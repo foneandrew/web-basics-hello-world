@@ -36,7 +36,6 @@ function displayImages(count, image) {
       paragraph.innerHTML += "<img src=\' + image + \'>";
   }
 }
-
 function displayQuestionAndAnswer(question, answer) {
   $("#results-area").text("True or false?");
   $("#question-display").text(question);
