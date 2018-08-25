@@ -1,9 +1,14 @@
-const express = require('express')
-const app = express()
+const express = require('express');
+const app = express();
+const servestatic = require('serve-static');
 
-app.get('/sheep', (req, res) => processData().then((data) => res.send(data)));
+app.use(servestatic("."));
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.get('/sheep', (req, res) => processData().then((data) => {
+  res.send(data); 
+}));
+
+app.listen(3001, () => console.log('Example app listening on port 3001!'))
 
 function processData() {
     var csv = require("csv-query");

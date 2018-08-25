@@ -4,6 +4,12 @@
  */
 
 // $(...) will run the function you give it when the page is loaded & ready
+fetch("/sheep").then((data) => data.json()).then((data) => { document.getElementById('num_sheep').innerHTML = format_num(data); });
+
+const format_num = (x) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 $(function() {
 
   var imageCountPeople = 1;
