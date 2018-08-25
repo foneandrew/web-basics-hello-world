@@ -5,7 +5,20 @@
 
 // $(...) will run the function you give it when the page is loaded & ready
 $(function() {
+
+  var imageCountPeople = 1;
+  var imageCountSheep = 6;
+  //varimage = 
+  
+  var paragraph = document.getElementById('images');
+  for (var i = 0; count < 6; i++) {
+      paragraph.innerHTML += "<img src='person.svg'>";
+  }
   // console.log will log a message or object to the browser developer console
+  
+  
+  document.getElementById('injected').innerHTML = "I INJECTED THIS";
+  
   console.log("page loaded...");
 
   $("selector-goes-here").click(/* function for when the button is clicked goes here */);
@@ -16,6 +29,13 @@ $(function() {
    * The function should call one of the functions below, and pass the other in as the callback...
    */
 });
+
+function displayImages(count, image) {  
+  var paragraph = document.getElementById('images');
+  for (var i = 0; count < 3; i++) {
+      paragraph.innerHTML += "<img src=\' + image + \'>";
+  }
+}
 
 function displayQuestionAndAnswer(question, answer) {
   $("#results-area").text("True or false?");

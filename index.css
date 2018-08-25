@@ -19,3 +19,14 @@
 .content{
   text-align: center;
 }
+
+h1{
+  text-align: center;
+}
+
+#sheep{
+  width: 120px;
+  background-image: url('sheep.png');
+  background-repeat: repeat-x;
+  height: 100px;
+}
