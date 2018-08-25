@@ -17,6 +17,8 @@ $(function() {
    */
 });
 
+processData();
+
 function displayQuestionAndAnswer(question, answer) {
   $("#results-area").text("True or false?");
   $("#question-display").text(question);
