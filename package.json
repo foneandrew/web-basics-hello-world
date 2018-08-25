@@ -1,0 +1,14 @@
+{
+    "name": "HowManySheep",
+    "version": "0.0.1",
+    "description": "",
+    "main": "js/server.js",
+    "scripts": {
+        "start": "nodemon js/server.js"
+    },
+    "dependencies": {
+        "csv-query": "0.0.4",
+        "express": "^4.16.3",
+        "nodemon": "^1.18.3"
+    }
+}

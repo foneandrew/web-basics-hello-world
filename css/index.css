@@ -11,3 +11,27 @@
 #answer-display:hover {
   color: #fff;
 }
+
+.header{
+  text-align: center;
+}
+
+.content{
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#sheep{
+  width: 100px;
+  background-image: url('sheep.png');
+  background-repeat: repeat-x;
+  height: 100px;
+  /* float: right; */
+}
+
+#person{
+  /* float: left; */
+}

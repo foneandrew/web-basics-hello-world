@@ -7,23 +7,36 @@
     -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    
+
     <!-- Load our files -->
-    <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/server.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
   </head>
 
   <body>
     <!-- TODO: Say something interesting in the heading tag... -->
-    <h1>...</h1>
+  <div class="header"></div>
+      <h1>How Many Sheep</h1>
+  </div>
 
-    <div class="purple">
-      <span>This text should be purple</span>
+  <div class="content">
+    <div id="person">
+        <p><span id="injected">
+        </span></p>
     </div>
+    <div id="person">
+      <img src="man icon.png"> 
+    </div>
+    <div id="sheep">
+    </div>
+    <p><span id="num_sheep"></span> Sheep!</p>
+    <p>4,000,000 People!</p>
+  </div>
 
-    <button>Show me some animal trivia!</button>
 
-    <div id="results-area"></div>
-    <div id="question-display"></div>
-    <div id="answer-display"></div>
+  
   </body>
 </html>
