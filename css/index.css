@@ -35,3 +35,15 @@ h1{
 #person{
   /* float: left; */
 }
+
+.map{
+  padding-left:50%;
+  padding-right: 50%;
+  text-align: center;
+  }
+  
+  #test > path {
+  fill: pink;
+  stroke: #ff0000;
+  stroke-width: 1;
+  }
